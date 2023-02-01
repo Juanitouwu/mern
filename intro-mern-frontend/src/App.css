@@ -1,0 +1,110 @@
+/*header section*/
+
+
+.sub_page .hero_area {
+  height: auto;
+  background-image: none;
+  background-color: #e1f3fd;
+}
+
+.sub_page .hero_area::after {
+  display: none;
+}
+
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.header_section .nav_container {
+  margin: 0 auto;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link {
+  margin: 10px 30px;
+  padding: 0;
+  color: #0fcfdc;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.custom_nav-container .navbar-nav .nav-item .nav-link::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  position: absolute;
+  top: 50%;
+  left: -10px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  background-color: #0fcfdc;
+  border-radius: 100%;
+}
+
+.custom_nav-container .navbar-nav .nav-item.active .nav-link, .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
+  color: #2a2132;
+}
+
+.custom_nav-container .navbar-nav .nav-item.active .nav-link::before, .custom_nav-container .navbar-nav .nav-item:hover .nav-link::before {
+  background-color: #2a2132;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar-brand img {
+  width: 30px;
+  margin-right: 5px;
+}
+
+.navbar-brand span {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0fcfdc;
+  text-transform: uppercase;
+}
+
+.custom_nav-container {
+  z-index: 99999;
+  padding-top: 20px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.navbar-expand-lg .navbar-collapse {
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
